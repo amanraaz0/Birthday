@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home · Happy Birthday Khushi Kasaudhan</title>
+  <meta name="description" content="A premium birthday gift website made with love for Khushi Kasaudhan.">
+  <meta name="theme-color" content="#2a0b3d">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💖</text></svg>">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="stars" aria-hidden="true"></div>
+  <span class="shooting-star" aria-hidden="true"></span>
+  <span class="shooting-star" aria-hidden="true"></span>
+  <div class="hearts" aria-hidden="true">
+    <span style="--x:32%;--d:19s;--s:1.14;--delay:-6.7s"></span>
+    <span style="--x:79%;--d:17s;--s:1.23;--delay:-1.2s"></span>
+    <span style="--x:3%;--d:17s;--s:0.86;--delay:-4.2s"></span>
+    <span style="--x:93%;--d:17s;--s:1.14;--delay:-9.9s"></span>
+    <span style="--x:52%;--d:20s;--s:1.46;--delay:-4.2s"></span>
+    <span style="--x:21%;--d:18s;--s:0.99;--delay:-0.3s"></span>
+    <span style="--x:10%;--d:12s;--s:1.36;--delay:-10.6s"></span>
+    <span style="--x:40%;--d:10s;--s:1.42;--delay:-4.8s"></span>
+    <span style="--x:78%;--d:16s;--s:1.31;--delay:-16.6s"></span>
+    <span style="--x:52%;--d:19s;--s:1.04;--delay:-16.8s"></span>
+    <span style="--x:48%;--d:11s;--s:0.64;--delay:-8.9s"></span>
+    <span style="--x:35%;--d:20s;--s:1.04;--delay:-11.3s"></span>
+    <span style="--x:40%;--d:16s;--s:1.11;--delay:-6.9s"></span>
+    <span style="--x:46%;--d:18s;--s:1.19;--delay:-10.5s"></span>
+    <span style="--x:45%;--d:20s;--s:1.52;--delay:-0.5s"></span>
+    <span style="--x:37%;--d:19s;--s:1.27;--delay:-2.9s"></span>
+  </div>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav">
+    <a href="index.html" class="nav__brand" aria-label="Home">Khushi ♥</a>
+    <input type="checkbox" id="nav-toggle" class="nav__toggle" aria-label="Toggle menu">
+    <label for="nav-toggle" class="nav__burger" aria-hidden="true"><span></span></label>
+    <ul class="nav__links">
+      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="about.html">About Khushi</a></li>
+      <li><a href="story.html">Our Story</a></li>
+      <li><a href="little-things.html">Little Things</a></li>
+      <li><a href="amazing.html">Why You're Amazing</a></li>
+      <li><a href="countdown.html">Countdown</a></li>
+      <li><a href="surprise.html">Final Surprise</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__inner">
+        <p class="hero__badge glass">✨ A little world made just for you ✨</p>
+        <h1 id="hero-title">
+          <span class="hero__happy">Happy Birthday</span>
+          <span class="hero__name" style="display:block">Khushi Kasaudhan</span>
+        </h1>
+        <div class="hero__divider" aria-hidden="true">♥</div>
+        <p class="typing-line" aria-live="polite"><span data-typing='["Happy Birthday, Khushi Kasaudhan! 🎂","To the girl with the purest heart 💖","Brownie cake’s best friend 🍫","Congratulations on your first job! 💼","Keep shining. Keep smiling. Keep being YOU ✨"]'></span><span class="caret" aria-hidden="true"></span></p>
+
+        <!-- Mini birthday countdown -->
+        <div class="mini-countdown" data-countdown aria-label="Countdown to Khushi's birthday">
+        <div class="cell glass"><span class="num" data-unit="days">00</span><span class="label">Days</span></div>
+        <div class="cell glass"><span class="num" data-unit="hours">00</span><span class="label">Hours</span></div>
+        <div class="cell glass"><span class="num" data-unit="minutes">00</span><span class="label">Minutes</span></div>
+        <div class="cell glass"><span class="num" data-unit="seconds">00</span><span class="label">Seconds</span></div>
+        </div>
+        <p class="mini-note" data-countdown-msg data-wait="until the clock strikes 12 and it’s officially Khushi’s day 🎂" data-done="🎉 It’s officially Khushi’s birthday! 🎉"></p>
+
+        <div class="hero__actions">
+          <a href="#journey" class="btn">Begin the Journey <span aria-hidden="true">→</span></a>
+          <a href="surprise.html" class="btn btn--ghost">Skip to the Letter 💌</a>
+        </div>
+      </div>
+      <span class="hero__scroll" aria-hidden="true"></span>
+    </section>
+
+    <!-- ===== Journey overview ===== -->
+    <section id="journey" class="page" aria-labelledby="journey-title">
+      <header class="section-head reveal">
+        <span class="eyebrow">Your birthday journey</span>
+        <h2 id="journey-title" class="title-script">Six Little Gifts</h2>
+        <p class="subtitle">Each page is a small surprise, wrapped with love. Open them one by one, and save the last one for the very end.</p>
+      </header>
+
+      <div class="journey">
+        <a href="about.html" class="glass reveal" style="--delay:.05s"><span class="icon">🌸</span><h3>About Khushi</h3><p>Pure heart, brownie love &amp; a very rare “sorry”</p></a>
+        <a href="story.html" class="glass reveal" style="--delay:.1s"><span class="icon">📖</span><h3>Our Story</h3><p>The fairy tale of a girl named Happiness</p></a>
+        <a href="little-things.html" class="glass reveal" style="--delay:.15s"><span class="icon">🎨</span><h3>The Little Things</h3><p>Twelve tiny reasons she’s one of a kind</p></a>
+        <a href="amazing.html" class="glass reveal" style="--delay:.2s"><span class="icon">💖</span><h3>Why You're Amazing</h3><p>Ten cards, ten truths</p></a>
+        <a href="countdown.html" class="glass reveal" style="--delay:.25s"><span class="icon">⏳</span><h3>Countdown</h3><p>Midnight is coming… and so is the party</p></a>
+        <a href="surprise.html" class="glass reveal" style="--delay:.3s"><span class="icon">🌙</span><h3>Final Surprise</h3><p>A letter from the heart. Save it for last.</p></a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Canvas for confetti, fireworks, hearts & sparkles -->
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <nav class="page-nav" aria-label="Page navigation">
+    <span></span>
+    <a href="about.html" class="btn">Next: About Khushi →</a>
+  </nav>
+
+  <footer class="footer">
+    <p>Made with <span class="heart">♥</span> for Khushi Kasaudhan · Happy Birthday!</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

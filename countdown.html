@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countdown · Happy Birthday Khushi Kasaudhan</title>
+  <meta name="description" content="Countdown to Khushi Kasaudhan's birthday at midnight.">
+  <meta name="theme-color" content="#2a0b3d">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💖</text></svg>">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-orbs" aria-hidden="true"><span></span><span></span><span></span></div>
+  <div class="hearts" aria-hidden="true">
+    <span style="--x:7%;--d:15s;--s:1.06;--delay:-11.7s"></span>
+    <span style="--x:71%;--d:16s;--s:1.24;--delay:-0.8s"></span>
+    <span style="--x:57%;--d:10s;--s:0.97;--delay:-8.9s"></span>
+    <span style="--x:91%;--d:15s;--s:1.02;--delay:-12.5s"></span>
+    <span style="--x:60%;--d:10s;--s:0.85;--delay:-9.6s"></span>
+    <span style="--x:90%;--d:19s;--s:0.67;--delay:-7.6s"></span>
+    <span style="--x:56%;--d:12s;--s:1.48;--delay:-16.9s"></span>
+    <span style="--x:49%;--d:18s;--s:1.39;--delay:-4.7s"></span>
+    <span style="--x:61%;--d:11s;--s:1.54;--delay:-13.2s"></span>
+    <span style="--x:69%;--d:16s;--s:1.27;--delay:-13.2s"></span>
+    <span style="--x:74%;--d:18s;--s:0.70;--delay:-10.6s"></span>
+    <span style="--x:2%;--d:17s;--s:0.74;--delay:-13.9s"></span>
+    <span style="--x:7%;--d:18s;--s:0.69;--delay:-1.8s"></span>
+    <span style="--x:50%;--d:12s;--s:1.42;--delay:-6.1s"></span>
+  </div>
+
+  <!-- ===== Navigation ===== -->
+  <header class="nav">
+    <a href="index.html" class="nav__brand" aria-label="Home">Khushi ♥</a>
+    <input type="checkbox" id="nav-toggle" class="nav__toggle" aria-label="Toggle menu">
+    <label for="nav-toggle" class="nav__burger" aria-hidden="true"><span></span></label>
+    <ul class="nav__links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Khushi</a></li>
+      <li><a href="story.html">Our Story</a></li>
+      <li><a href="little-things.html">Little Things</a></li>
+      <li><a href="amazing.html">Why You're Amazing</a></li>
+      <li><a href="countdown.html" class="active" aria-current="page">Countdown</a></li>
+      <li><a href="surprise.html">Final Surprise</a></li>
+    </ul>
+  </header>
+
+  <main class="page">
+    <header class="section-head reveal">
+      <span class="eyebrow">Page 6 · Countdown</span>
+      <h1 class="title-script">Counting Down to Midnight</h1>
+      <p class="subtitle">Khushi’s birthday begins tonight at 12:00 AM. Stay on this page when the clock hits zero… 🎉</p>
+    </header>
+
+    <!-- Shown automatically when the countdown reaches zero -->
+    <section class="bday-banner glass" id="bday-banner" hidden aria-live="polite">
+      <h2 class="gold-text">🎉 Happy Birthday Khushi Kasaudhan 🎉</h2>
+      <p>It’s officially your day. Make a wish, beautiful! 💖</p>
+    </section>
+
+    <!-- ===== Countdown ===== -->
+    <section class="countdown" data-countdown aria-label="Countdown to birthday">
+        <div class="count-box glass reveal"><span class="num" data-unit="days">00</span><span class="label">Days</span></div>
+        <div class="count-box glass reveal"><span class="num" data-unit="hours">00</span><span class="label">Hours</span></div>
+        <div class="count-box glass reveal"><span class="num" data-unit="minutes">00</span><span class="label">Minutes</span></div>
+        <div class="count-box glass reveal"><span class="num" data-unit="seconds">00</span><span class="label">Seconds</span></div>
+    </section>
+    <p class="count-msg" data-countdown-msg data-wait="Every second brings us closer to midnight… and to you ✨" data-done="The wait is over… it’s officially your day! 💖" aria-live="polite"></p>
+
+    <!-- ===== Gift ===== -->
+    <section class="gift-wrap reveal" aria-label="Surprise">
+      <span class="gift" aria-hidden="true">🎁</span><br>
+      <button class="btn btn--gold" id="open-surprise">Open Surprise ✨</button>
+    </section>
+  </main>
+
+  <!-- ===== Celebration popup ===== -->
+  <div class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+    <div class="popup__card glass">
+      <button class="popup__close" aria-label="Close">✕</button>
+
+      <!-- Pure-CSS birthday cake with sparkles -->
+      <div class="cake" aria-hidden="true">
+        <span class="sparkle">✦</span><span class="sparkle">✦</span><span class="sparkle">✦</span>
+        <span class="sparkle">✦</span><span class="sparkle">✦</span><span class="sparkle">✦</span>
+        <div class="candles"><span class="candle"></span><span class="candle"></span><span class="candle"></span></div>
+        <div class="cake__layer cake__layer--top"></div>
+        <div class="cake__layer cake__layer--bottom"></div>
+        <div class="cake__plate"></div>
+      </div>
+
+      <h2 class="popup__title gold-text" id="popup-title">Happy Birthday<br>Khushi Kasaudhan!</h2>
+      <p class="popup__text">Close your eyes, make a wish, and know that you are loved more than words can say. (And yes, this cake is brownie flavoured. 🍫) 💖</p>
+      <div class="popup__actions">
+        <button class="btn" id="celebrate-again">Celebrate Again 🎉</button>
+        <button class="btn btn--ghost" id="music-btn">🎵 Play Music</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Canvas for confetti, fireworks, hearts & sparkles -->
+  <canvas id="fx" aria-hidden="true"></canvas>
+
+  <nav class="page-nav" aria-label="Page navigation">
+    <a href="amazing.html" class="btn btn--ghost">← Why You're Amazing</a>
+    <a href="surprise.html" class="btn">Next: Final Surprise →</a>
+  </nav>
+
+  <footer class="footer">
+    <p>Made with <span class="heart">♥</span> for Khushi Kasaudhan · Happy Birthday!</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
